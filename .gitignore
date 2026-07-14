@@ -32,3 +32,9 @@ Thumbs.db
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Local-only working docs (spec / implementation plan) — never committed
+docs/_local/
+
+# TypeScript build artifacts
+*.tsbuildinfo
