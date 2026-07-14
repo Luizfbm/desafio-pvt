@@ -229,8 +229,8 @@ Os limiares (85%, 100%, 10 pp, 20 pp) são constantes nomeadas num único módul
 | Métricas derivadas, não persistidas | Fonte única de verdade; impossível dessincronizar | Cálculo a cada request (barato nesta escala; ver seção 6) |
 | Faturamento como entidade própria | Sem ela, o critério "físico vs financeiro" não existe | Uma tabela e um seed a mais |
 | Planejado na Alocação | Realista (planeja-se por pessoa); permite análise por analista | Um SUM a mais na consulta |
-| PostgreSQL + Drizzle | Relacional maduro; ORM TypeScript-first leve, SQL transparente | Exige Docker para rodar local |
-| Express + Zod | Onipresente, simples, validação explícita nas bordas | Menos "baterias inclusas" que um framework opinativo |
+| PostgreSQL + Drizzle | Relacional maduro; ORM TypeScript-first leve, SQL transparente; ferramentas onde tenho maior domínio | Exige Docker para rodar local |
+| Express + Zod | Também por serem ferramentas onde tenho bastante domínio; onipresente, simples, validação explícita nas bordas | Menos "baterias inclusas" que um framework opinativo |
 | Monorepo com camadas HTTP/Serviço/Dados | Separação de responsabilidades; regras testáveis isoladamente | Um pouco mais de estrutura inicial |
 
 O que foi considerado e descartado:
