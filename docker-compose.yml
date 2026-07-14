@@ -17,5 +17,17 @@ services:
       timeout: 5s
       retries: 10
 
+  backend:
+    build: ./backend
+    environment:
+      # Dentro da rede do compose, o host do banco é o serviço "db" na 5432.
+      DATABASE_URL: postgres://pvt:pvt@db:5432/painel
+      PORT: 3000
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+
 volumes:
   pgdata:
